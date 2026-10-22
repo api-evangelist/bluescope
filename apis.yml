@@ -1,23 +1,131 @@
 aid: bluescope
+
 name: BlueScope
-description: 'BlueScope is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'BlueScope (BlueScope Steel Limited, ASX-listed, headquartered in Australia) is a steel supplier and manufacturer for the building and construction industries, producing flat and painted steel
+  products sold under brands including COLORBOND, ZINCALUME, LYSAGHT, TRUECORE and Butler, with operations across Australia, New Zealand, North America, ASEAN and China. BlueScope runs a Developer Centre
+  (developer.apiaut.bluescope.com, an Azure API Management portal) for B2B EDI trading with its business units: REST APIs accepting XML or JSON for purchase orders, order responses, shipment notifications,
+  invoices, test certificates and GS1 transport messages, with the API list visible only after sign-up and approved product subscription. dev.bluescope.com is a staging copy of the corporate site, not the
+  developer portal.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bluescope/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Steel
+- Manufacturing
+- Building Materials
+- Construction
+- Australia
+- ASX
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://www.bluescope.com/content/dam/bluescope/corporate/bluescope-com/global/assets/Header_Logo.svg
+
 common:
+- type: Conventions
+  url: conventions/bluescope-conventions.yml
+- type: Authentication
+  url: authentication/bluescope-authentication.yml
+- type: Conformance
+  url: conformance/bluescope-conformance.yml
+- type: Hosts
+  url: hosts/bluescope-hosts.yml
+- type: Vendors
+  url: vendors/bluescope-vendors.yml
+- type: Documentation
+  url: https://dev.bluescope.com/
+- type: DomainSecurity
+  url: security/bluescope-domain-security.yml
 - type: Website
-  url: https://bluescope.com/
+  url: https://www.bluescope.com/
+- type: Newsroom
+  url: https://www.bluescope.com/news
+- type: Support
+  url: https://www.bluescope.com/contact
+- type: Investors
+  url: https://www.bluescope.com/investors
+- type: Careers
+  url: https://www.bluescope.com/careers
+- type: TermsOfService
+  url: https://www.bluescope.com/terms-conditions
+- type: PrivacyPolicy
+  url: https://www.bluescope.com/privacy-policy
+- type: LinkedIn
+  url: https://www.linkedin.com/company/bluescope-steel
+- type: YouTube
+  url: https://www.youtube.com/user/tvbluescope
+
+apis:
+- aid: bluescope:bluescope-edi-apis
+  name: BlueScope EDI Trading APIs
+  description: 'REST APIs from BlueScope''s Developer Centre that enable EDI trading with BlueScope business units (Orrcon, BlueScope Steel Distribution/BSFP, BlueScope Buildings/BBC, CIPA): sending purchase
+    orders in GS1 or ASI format, and receiving order responses, shipment notifications (despatch advice), invoices, test certificates and GS1 transport instruction/status messages, in XML or JSON. Calls
+    need an Azure AD OAuth 2.0 bearer token (client credentials issued by BlueScope Integration Support) plus an Ocp-Apim-Subscription-Key from an approved product subscription; the API definitions are
+    shown only to signed-in subscribers, and the public portal publishes JSON Schemas and examples in its welcome packs.'
+  humanURL: https://developer.apiaut.bluescope.com/
+  tags:
+  - EDI
+  - GS1
+  - Purchase Orders
+  - Invoices
+  - Shipping
+  - Supply Chain
+  properties:
+  - type: Documentation
+    url: https://developer.apiaut.bluescope.com/GettingStartedPage
+  - type: Authentication
+    url: https://developer.apiaut.bluescope.com/GettingStartedPage_Authentication
+  - type: JSONSchema
+    name: GS1 Order Response JSON Schema
+    url: json-schema/bluescope-gs1-order-response-schema.json
+  - type: JSONSchema
+    name: GS1 Despatch Advice JSON Schema
+    url: json-schema/bluescope-gs1-despatch-advice-schema.json
+  - type: JSONSchema
+    name: GS1 Invoice JSON Schema
+    url: json-schema/bluescope-gs1-invoice-schema.json
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  detail: BlueScope's Developer Centre (Azure API Management) returns an empty API and product list to anonymous visitors (/developer/apis -> {"value":[]}); API definitions appear only after sign-up and
+    an admin-approved product subscription, so no OpenAPI could be fetched, though GS1 JSON Schemas and examples are public in the welcome-pack zips.
+  evidence:
+  - url: https://developer.apiaut.bluescope.com/
+    status: 200
+  - url: https://developer.apiaut.bluescope.com/developer/apis?api-version=2022-04-01-preview
+    status: 200
+  - url: https://developer.apiaut.bluescope.com/developer/products?api-version=2022-04-01-preview
+    status: 200
+  - url: https://developer.apiaut.bluescope.com/apis
+    status: 200
+  - url: https://developer.apiaut.bluescope.com/content/GS1POA.zip
+    status: 200
+  - url: https://www.bluescope.com/openapi.json
+    status: 404
+  checked: '2026-10-21'
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 23
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

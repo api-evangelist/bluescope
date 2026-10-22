@@ -1,0 +1,12 @@
+name: BlueScope pricing
+generated: '2026-10-21'
+method: none
+source: https://developer.apiaut.bluescope.com/
+audience: unclear
+pricing_basis: none
+published: false
+plan_count: 0
+plans: []
+delivery:
+  mode: managed
+note: The Developer Centre publishes no pricing or plans. Access is by approved product subscription for BlueScope trading partners (customers and logistics vendors); the APIs support B2B EDI trade with BlueScope business units rather than being sold.

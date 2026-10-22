@@ -1,0 +1,31 @@
+generated: '2026-10-21'
+method: searched
+source: https://developer.apiaut.bluescope.com/GettingStartedPage_Authentication
+docs: https://developer.apiaut.bluescope.com/GettingStartedPage_Authentication
+name: BlueScope authentication
+note: No OpenAPI is held (API definitions are visible only to signed-in, approved subscribers), so this profile is read from the Developer Centre Getting Started pages. The token endpoint was not called.
+schemes:
+- name: azureAdOAuth2
+  type: oauth2
+  flow: clientCredentials
+  token_url: https://login.microsoftonline.com/bluescopeltd.onmicrosoft.com/oauth2/token
+  in: header
+  header: Authorization
+  format: Bearer
+  description: "All Bluescope apis require an authorisation bearer token to ensure that you have the required roles to execute the api. This uses Microsoft's Oauth2.0 bearer token retrieval api."
+  onboarding: "Email IntegrationSupport@bluescope.com with Organisation Name and Buyer Identifiers; Integration Support returns client_id, client_secret and resource."
+  credentials_issued: [client_id, client_secret, resource]
+  postman_collection: https://developer.apiaut.bluescope.com/content/OAuth2.0.postman_collection.json
+  source: https://developer.apiaut.bluescope.com/GettingStartedPage_Authentication
+- name: apimSubscriptionKey
+  type: apiKey
+  in: header
+  header: Ocp-Apim-Subscription-Key
+  alternate_query_parameter: subscription-key
+  description: "Bluecope apis requires you to provide a subscription key in the header for every HTTP request."
+  onboarding: "Log in to the portal and subscribe to a Product; all subscriptions will remain inactive until it has been approved by the admin. Approved subscriptions show a primary and a secondary key."
+  source: https://developer.apiaut.bluescope.com/GettingStartedPage_SubscriptionKeys
+combined: Both are required on BlueScope API calls (bearer token plus subscription key); the Microsoft token call itself needs no subscription key.
+portal_sign_in:
+  methods: [Basic (username and password), Azure Active Directory guest account]
+  source: https://developer.apiaut.bluescope.com/GettingStartedPage_SignupAndLogin

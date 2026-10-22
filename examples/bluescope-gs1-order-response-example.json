@@ -1,0 +1,466 @@
+{
+    "orderResponseMessage": {
+        "standardBusinessDocumentHeader": {
+            "headerVersion": "1.0",
+            "sender": [
+                {
+                    "authority": "EAN.UCC",
+                    "value": "GLN"
+                }
+            ],
+            "receiver": [
+                {
+                    "authority": "EAN.UCC",
+                    "value": "GLN"
+                }
+            ],
+            "documentIdentification": {
+                "standard": "EAN.UCC",
+                "typeVersion": "3.3",
+                "type": "ORDER-RESPONSE",
+                "multipleType": "false",
+                "instanceIdentifier": "0000000016683292-2020-03-30T05:38:10.682Z",
+                "creationDateAndTime": "2020-03-30T05:38:10.6825863+00:00"
+            }
+        },
+        "orderResponse": [
+            {
+                "creationDateTime": "2020-03-30T05:38:10.6826091+00:00",
+                "documentStatusCode": "ORIGINAL",
+                "documentActionCode": "ADD",
+                "documentEffectiveDate": {
+                    "date": "2020-03-30T00:00:00+00:00"
+                },
+                "orderResponseIdentification": {
+                    "entityIdentification": "4A-PO-P9999x923",
+                    "contentOwner": {
+                        "additionalPartyIdentification": [
+                            {
+                                "additionalPartyIdentificationTypeCode": "SELLER_ASSIGNED_IDENTIFIER_FOR_A_PARTY",
+                                "value": "0011469929",
+                                "name": null
+                            }
+                        ]
+                    }
+                },
+                "responseStatusCode": "ACCEPTED",
+                "orderResponseReasonCode": null,
+                "note": {
+                    "languageCode": "EN",
+                    "value": "NOTE: BOOK IN LOADS ON 0732719125"
+                },
+                "buyer": {
+                    "gln": "GLN",
+                    "additionalPartyIdentification": [
+                        {
+                            "additionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+                            "value": "xxxx",
+                            "name": null
+                        }
+                    ],
+                    "organisationDetails": {
+                        "organisationName": "ORRCON STEEL",
+                        "legalRegistration": [
+                            {
+                                "legalRegistrationType": "ABN",
+                                "legalRegistrationNumber": null
+                            }
+                        ]
+                    },
+                    "address": {
+                        "name": "xxx",
+                        "city": "xxxx",
+                        "countryCode": "AU",
+                        "postalCode": "xxxx",
+                        "state": "xxx",
+                        "streetAddressOne": "xxxxx",
+                        "streetAddressTwo": null
+                    },
+                    "contact": null,
+                    "avpList": null
+                },
+                "seller": {
+                    "gln": "GLN",
+                    "additionalPartyIdentification": [
+                        {
+                            "additionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+                            "value": "9341524005579",
+                            "name": null
+                        }
+                    ],
+                    "organisationDetails": {
+                        "organisationName": "Bluescope Steel",
+                        "legalRegistration": [
+                            {
+                                "legalRegistrationType": "ABN",
+                                "legalRegistrationNumber": null
+                            }
+                        ]
+                    },
+                    "address": null,
+                    "contact": null,
+                    "avpList": null
+                },
+                "shipTo": {
+                    "gln": "GLN",
+                    "additionalPartyIdentification": [
+                        {
+                            "additionalPartyIdentificationTypeCode": "BUYER_ASSIGNED_IDENTIFIER_FOR_A_PARTY",
+                            "value": null,
+                            "name": null
+                        }
+                    ],
+                    "address": null
+                },
+                "allowanceCharge": [
+                    {
+                        "allowanceChargeAmount": {
+                            "currencyCode": "AUD",
+                            "value": 586.4
+                        },
+                        "allowanceChargePercentage": 0.0,
+                        "allowanceChargeType": 58,
+                        "allowanceOrChargeType": 1,
+                        "amountPerUnit": {
+                            "currencyCode": "AUD",
+                            "value": 100.0
+                        },
+                        "baseAmount": null,
+                        "baseNumberOfUnits": {
+                            "measurementUnitCode": "TNE",
+                            "value": 1
+                        },
+                        "bracketIdentifier": null,
+                        "effectiveDateTypecketIdentifier": 0,
+                        "sequenceNumber": 1,
+                        "settlementType": "6",
+                        "specialServiceType": 0,
+                        "allowanceChargeDescription": null
+                    }
+                ],
+                "orderResponseLineItem": [
+                    {
+                        "lineItemNumber": "000001",
+                        "confirmedQuantity": {
+                            "measurementUnitCode": "C62",
+                            "value": 127.0
+                        },
+                        "lineItemChangeIndicator": "5",
+                        "netAmount": {
+                            "currencyCode": "AUD",
+                            "value": 2270.13
+                        },
+                        "netPrice": {
+                            "currencyCode": "AUD",
+                            "value": 2.91
+                        },
+                        "itemPriceBaseQuantity": {
+                            "measurementUnitCode": "MTR",
+                            "value": 1.0
+                        },
+                        "transactionalTradeItem": {
+                            "gtin": "9341524738118",
+                            "tradeItemQuantity": null,
+                            "tradeItemDescription": {
+                                "languageCode": "en",
+                                "value": "CP-020.0-M-C250-BLK-PE-06500"
+                            },
+                            "transactionalItemData": [
+                                {
+                                    "serialNumber": null,
+                                    "transactionalItemDimensions": [
+                                        {
+                                            "width": null,
+                                            "thick": null,
+                                            "weight": {
+                                                "measurementUnitCode": "KG",
+                                                "value": 0.00128778,
+                                                "minimumValue": 0.0,
+                                                "maximumValue": 0.0
+                                            }
+                                        }
+                                    ],
+                                    "transactionalItemWeight": null,
+                                    "avpList": null
+                                }
+                            ],
+                            "additionalTradeItemIdentification": null,
+                            "avpList": null
+                        },
+                        "materialSpecification": {
+                            "entityIdentification": "00002163"
+                        },
+                        "orderResponseLineItemDetail": [
+                            {
+                                "orderLogisticalInformation": {
+                                    "orderLogisticalDateInformation": {
+                                        "requestedDeliveryDateRange": {
+                                            "beginDate": null,
+                                            "endDate": null
+                                        },
+                                        "requestedDeliveryDateTime": {
+                                            "date": "2020-04-27T00:00:00+00:00"
+                                        }
+                                    },
+                                    "shipTo": null
+                                }
+                            }
+                        ],
+                        "avpList": {
+                            "ecomStringAttributeValuePairList": [
+                                {
+                                    "attributeName": null,
+                                    "qualifierCodeName": "SELLERORDERLINENUMBER",
+                                    "qualifierCodeList": null,
+                                    "qualifierCodeListVersion": null,
+                                    "value": "000100"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "lineItemNumber": "000002",
+                        "confirmedQuantity": {
+                            "measurementUnitCode": "C62",
+                            "value": 16.0
+                        },
+                        "lineItemChangeIndicator": "5",
+                        "netAmount": {
+                            "currencyCode": "AUD",
+                            "value": 2522.88
+                        },
+                        "netPrice": {
+                            "currencyCode": "AUD",
+                            "value": 20.91
+                        },
+                        "itemPriceBaseQuantity": {
+                            "measurementUnitCode": "MTR",
+                            "value": 1.0
+                        },
+                        "transactionalTradeItem": {
+                            "gtin": "9341524456265",
+                            "tradeItemQuantity": null,
+                            "tradeItemDescription": {
+                                "languageCode": "en",
+                                "value": "RHS-075-075-06.0-C350-PTD-08000"
+                            },
+                            "transactionalItemData": [
+                                {
+                                    "serialNumber": null,
+                                    "transactionalItemDimensions": [
+                                        {
+                                            "width": null,
+                                            "thick": null,
+                                            "weight": {
+                                                "measurementUnitCode": "KG",
+                                                "value": 0.001536,
+                                                "minimumValue": 0.0,
+                                                "maximumValue": 0.0
+                                            }
+                                        }
+                                    ],
+                                    "transactionalItemWeight": null,
+                                    "avpList": null
+                                }
+                            ],
+                            "additionalTradeItemIdentification": null,
+                            "avpList": null
+                        },
+                        "materialSpecification": {
+                            "entityIdentification": "00003183"
+                        },
+                        "orderResponseLineItemDetail": [
+                            {
+                                "orderLogisticalInformation": {
+                                    "orderLogisticalDateInformation": {
+                                        "requestedDeliveryDateRange": {
+                                            "beginDate": null,
+                                            "endDate": null
+                                        },
+                                        "requestedDeliveryDateTime": {
+                                            "date": "2020-04-27T00:00:00+00:00"
+                                        }
+                                    },
+                                    "shipTo": null
+                                }
+                            }
+                        ],
+                        "avpList": {
+                            "ecomStringAttributeValuePairList": [
+                                {
+                                    "attributeName": null,
+                                    "qualifierCodeName": "SELLERORDERLINENUMBER",
+                                    "qualifierCodeList": null,
+                                    "qualifierCodeListVersion": null,
+                                    "value": "000200"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "lineItemNumber": "000003",
+                        "confirmedQuantity": {
+                            "measurementUnitCode": "C62",
+                            "value": 16.0
+                        },
+                        "lineItemChangeIndicator": "5",
+                        "netAmount": {
+                            "currencyCode": "AUD",
+                            "value": 2627.84
+                        },
+                        "netPrice": {
+                            "currencyCode": "AUD",
+                            "value": 21.78
+                        },
+                        "itemPriceBaseQuantity": {
+                            "measurementUnitCode": "MTR",
+                            "value": 1.0
+                        },
+                        "transactionalTradeItem": {
+                            "gtin": "9341524724791",
+                            "tradeItemQuantity": null,
+                            "tradeItemDescription": {
+                                "languageCode": "en",
+                                "value": "RHS-089-089-05.0-C350-PTD-08000"
+                            },
+                            "transactionalItemData": [
+                                {
+                                    "serialNumber": null,
+                                    "transactionalItemDimensions": [
+                                        {
+                                            "width": null,
+                                            "thick": null,
+                                            "weight": {
+                                                "measurementUnitCode": "KG",
+                                                "value": 0.0016,
+                                                "minimumValue": 0.0,
+                                                "maximumValue": 0.0
+                                            }
+                                        }
+                                    ],
+                                    "transactionalItemWeight": null,
+                                    "avpList": null
+                                }
+                            ],
+                            "additionalTradeItemIdentification": null,
+                            "avpList": null
+                        },
+                        "materialSpecification": {
+                            "entityIdentification": "00003198"
+                        },
+                        "orderResponseLineItemDetail": [
+                            {
+                                "orderLogisticalInformation": {
+                                    "orderLogisticalDateInformation": {
+                                        "requestedDeliveryDateRange": {
+                                            "beginDate": null,
+                                            "endDate": null
+                                        },
+                                        "requestedDeliveryDateTime": {
+                                            "date": "2020-04-27T00:00:00+00:00"
+                                        }
+                                    },
+                                    "shipTo": null
+                                }
+                            }
+                        ],
+                        "avpList": {
+                            "ecomStringAttributeValuePairList": [
+                                {
+                                    "attributeName": null,
+                                    "qualifierCodeName": "SELLERORDERLINENUMBER",
+                                    "qualifierCodeList": null,
+                                    "qualifierCodeListVersion": null,
+                                    "value": "000300"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "lineItemNumber": "000004",
+                        "confirmedQuantity": {
+                            "measurementUnitCode": "C62",
+                            "value": 15.0
+                        },
+                        "lineItemChangeIndicator": "5",
+                        "netAmount": {
+                            "currencyCode": "AUD",
+                            "value": 2365.2
+                        },
+                        "netPrice": {
+                            "currencyCode": "AUD",
+                            "value": 20.91
+                        },
+                        "itemPriceBaseQuantity": {
+                            "measurementUnitCode": "MTR",
+                            "value": 1.0
+                        },
+                        "transactionalTradeItem": {
+                            "gtin": "9341524456531",
+                            "tradeItemQuantity": null,
+                            "tradeItemDescription": {
+                                "languageCode": "en",
+                                "value": "RHS-100-050-06.0-C350-PTD-08000"
+                            },
+                            "transactionalItemData": [
+                                {
+                                    "serialNumber": null,
+                                    "transactionalItemDimensions": [
+                                        {
+                                            "width": null,
+                                            "thick": null,
+                                            "weight": {
+                                                "measurementUnitCode": "KG",
+                                                "value": 0.00144,
+                                                "minimumValue": 0.0,
+                                                "maximumValue": 0.0
+                                            }
+                                        }
+                                    ],
+                                    "transactionalItemWeight": null,
+                                    "avpList": null
+                                }
+                            ],
+                            "additionalTradeItemIdentification": null,
+                            "avpList": null
+                        },
+                        "materialSpecification": {
+                            "entityIdentification": "00003447"
+                        },
+                        "orderResponseLineItemDetail": [
+                            {
+                                "orderLogisticalInformation": {
+                                    "orderLogisticalDateInformation": {
+                                        "requestedDeliveryDateRange": {
+                                            "beginDate": null,
+                                            "endDate": null
+                                        },
+                                        "requestedDeliveryDateTime": {
+                                            "date": "2020-04-27T00:00:00+00:00"
+                                        }
+                                    },
+                                    "shipTo": null
+                                }
+                            }
+                        ],
+                        "avpList": {
+                            "ecomStringAttributeValuePairList": [
+                                {
+                                    "attributeName": null,
+                                    "qualifierCodeName": "SELLERORDERLINENUMBER",
+                                    "qualifierCodeList": null,
+                                    "qualifierCodeListVersion": null,
+                                    "value": "000400"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "organizationId": "xxxxx",
+    "buyerPartyIdentifier": "xxxxx",
+    "sellerPartyIdentifier": "9341524005579",
+    "routableType": 1
+}

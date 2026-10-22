@@ -1,0 +1,7 @@
+name: BlueScope rate limits
+generated: '2026-10-21'
+method: none
+source: https://developer.apiaut.bluescope.com/GettingStartedPage
+limit_count: 0
+limits: []
+note: The public Developer Centre pages (Getting Started, Subscription Keys, Authentication, Sending Purchase Orders, FAQ) publish no rate limits, quotas or rate-limit headers. Product-level policies may exist behind the subscriber-only API pages.

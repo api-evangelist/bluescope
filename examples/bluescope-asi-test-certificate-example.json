@@ -1,0 +1,188 @@
+{
+    "certificate": {
+        "certificateHeader": {
+            "certificateNumber": "SS22971",
+            "versionNumber": "0.1",
+            "certificateDateTime": "2018-12-03T00:00:00+00:00",
+            "certificateFunctionCode": {
+                "value": "9"
+            },
+            "originalCertificateNumber": null,
+            "sellerParty": {
+                "partyIdentification": {
+                    "partyIdentifier": {
+                        "additionalPartyIdentificationTypeCode": null,
+                        "value": "9341524000024",
+                        "name": null
+                    }
+                }
+            },
+            "customerParty": {
+                "partyIdentification": {
+                    "partyIdentifier": {
+                        "additionalPartyIdentificationTypeCode": null,
+                        "value": "xxx",
+                        "name": null
+                    }
+                }
+            },
+            "customerOrderNumber": "20386",
+            "customerOrderLineNumber": null,
+            "supplierOrderNumber": "1048869",
+            "supplierOrderLineNumber": null,
+            "attachment": {
+                "type": "PDF",
+                "encoding": "Base64",
+                "value": "  BLOB  "
+            }
+        },
+        "certificateLine": [
+            {
+                "materialUnit": {
+                    "materialIdentification": {
+                        "materialIdentifier": {
+                            "languageCode": null,
+                            "value": "0020"
+                        },
+                        "additionalMaterialIdentification": [
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0919"
+                                }
+                            },
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0919AA"
+                                }
+                            },
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0919AB"
+                                }
+                            },
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0920"
+                                }
+                            },
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0920AB"
+                                }
+                            },
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0920AA"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "heat": [
+                    {
+                        "heatNumber": "7635209"
+                    }
+                ],
+                "customerOrderNumber": "20386",
+                "customerOrderLineNumber": "2",
+                "supplierOrderNumber": "1048869",
+                "supplierOrderLineNumber": "0020",
+                "itemSpecification": {
+                    "itemIdentification": {
+                        "customerArticleNumber": {
+                            "languageCode": null,
+                            "value": null
+                        },
+                        "supplierArticleNumber": {
+                            "languageCode": null,
+                            "value": "HRC2700476/HA350"
+                        },
+                        "itemDescription": null
+                    },
+                    "itemDescription": null
+                }
+            },
+            {
+                "materialUnit": {
+                    "materialIdentification": {
+                        "materialIdentifier": {
+                            "languageCode": null,
+                            "value": "0020"
+                        },
+                        "additionalMaterialIdentification": [
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0989AA"
+                                }
+                            },
+                            {
+                                "materialReferenceTypeCode": {
+                                    "value": "SN"
+                                },
+                                "materialReferenceNumber": {
+                                    "languageCode": null,
+                                    "value": "1H9C0989"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "heat": [
+                    {
+                        "heatNumber": "7635679"
+                    }
+                ],
+                "customerOrderNumber": "20386",
+                "customerOrderLineNumber": "2",
+                "supplierOrderNumber": "1048869",
+                "supplierOrderLineNumber": "0020",
+                "itemSpecification": {
+                    "itemIdentification": {
+                        "customerArticleNumber": {
+                            "languageCode": null,
+                            "value": null
+                        },
+                        "supplierArticleNumber": {
+                            "languageCode": null,
+                            "value": "HRC2700476/HA350"
+                        },
+                        "itemDescription": null
+                    },
+                    "itemDescription": null
+                }
+            }
+        ]
+    },
+    "organizationId": "xxx",
+    "buyerPartyIdentifier": "xxx",
+    "sellerPartyIdentifier": "9341524000024",
+    "routableType": 4
+}

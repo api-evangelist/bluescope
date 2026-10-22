@@ -1,0 +1,480 @@
+{
+	"invoiceMessage": {
+		"standardBusinessDocumentHeader": {
+			"headerVersion": "1.0",
+			"sender": [
+				{
+					"authority": "EAN.UCC",
+					"value": "GLN"
+				}
+			],
+			"receiver": [
+				{
+					"authority": "EAN.UCC",
+					"value": "GLN"
+				}
+			],
+			"documentIdentification": {
+				"standard": "EAN.UCC",
+				"typeVersion": "3.3",
+				"type": "INVOICE",
+				"multipleType": "False",
+				"instanceIdentifier": "0055243059-2020-03-31T03:29:17.456Z",
+				"creationDateAndTime": "2020-03-31T00:00:00+00:00"
+			}
+		},
+		"invoice": [
+			{
+				"creationDateTime": "2020-03-31T03:29:17.4564519+00:00",
+				"documentStatusCode": "ORIGINAL",
+				"invoiceIdentification": {
+					"entityIdentification": "0055243059"
+				},
+				"invoiceType": "INVOICE",
+				"invoiceCurrencyCode": "AUD",
+				"buyer": {
+					"gln": "GLN",
+					"additionalPartyIdentification": [
+						{
+							"additionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+							"value": "string",
+							"name": null
+						},
+						{
+							"additionalPartyIdentificationTypeCode": "BUYER_ASSIGNED_IDENTIFIER_FOR_A_PARTY",
+							"value": "string",
+							"name": null
+						}
+					],
+					"organisationDetails": {
+						"organisationName": "string",
+						"legalRegistration": null
+					},
+					"address": null,
+					"contact": null,
+					"avpList": null
+				},
+				"seller": {
+					"gln": "15 113 998 066",
+					"additionalPartyIdentification": [
+						{
+							"additionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+							"value": "string",
+							"name": null
+						}
+					],
+					"organisationDetails": {
+						"organisationName": "Orrcon Manufacturing",
+						"legalRegistration": [
+							{
+								"legalRegistrationType": "ABN",
+								"legalRegistrationNumber": "15 113 998 066"
+							}
+						]
+					},
+					"address": null,
+					"contact": null,
+					"avpList": {
+						"ecomStringAttributeValuePairList": [
+							{
+								"attributeName": null,
+								"qualifierCodeName": "INVOICEEISSUERPARTYNAME",
+								"qualifierCodeList": null,
+								"qualifierCodeListVersion": null,
+								"value": "Orrcon Manufacturing Pty Ltd"
+							}
+						]
+					}
+				},
+				"invoiceTotals": {
+					"totalInvoiceAmount": {
+						"currencyCode": "AUD",
+						"value": 11409.7
+					},
+					"totalVATAmount": {
+						"currencyCode": null,
+						"value": 0.0
+					}
+				},
+				"paymentTerms": [
+					{
+						"netPaymentDue": {
+							"dateDue": "2020-05-31T00:00:00+00:00"
+						},
+						"paymentTermsDiscount": null
+					}
+				],
+				"invoiceAllowanceCharge": [
+					{
+						"allowanceChargeAmount": {
+							"currencyCode": "AUD",
+							"value": 586.4
+						},
+						"allowanceChargePercentage": 0.0,
+						"allowanceChargeType": 58,
+						"allowanceOrChargeType": 1,
+						"amountPerUnit": null,
+						"baseAmount": null,
+						"baseNumberOfUnits": null,
+						"bracketIdentifier": null,
+						"effectiveDateTypecketIdentifier": 0,
+						"sequenceNumber": 0,
+						"settlementType": "6",
+						"specialServiceType": 0,
+						"allowanceChargeDescription": null
+					}
+				],
+				"invoiceLineItem": [
+					{
+						"lineItemNumber": "000100",
+						"invoicedQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 127.0
+						},
+						"amountInclusiveAllowancesCharges": {
+							"currencyCode": "AUD",
+							"value": 2270.13
+						},
+						"deliveredQuantity": null,
+						"itemPriceBaseQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 2.75
+						},
+						"transactionalTradeItem": {
+							"gtin": "9341524738118",
+							"tradeItemQuantity": null,
+							"tradeItemDescription": {
+								"languageCode": null,
+								"value": "CP-020.0-M-C250-BLK-PE-06500"
+							},
+							"transactionalItemData": null,
+							"additionalTradeItemIdentification": [
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "BUYER_ASSIGNED",
+									"value": "00002163"
+								},
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "SELLER_ASSIGNED",
+									"value": "000000000000198410"
+								}
+							],
+							"avpList": {
+								"ecomStringAttributeValuePairList": []
+							}
+						},
+						"purchaseOrder": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": "000001"
+						},
+						"despatchAdvice": {
+							"entityIdentification": "0123114103"
+						},
+						"avpList": {
+							"ecomStringAttributeValuePairList": [
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERNO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "0011469929"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERLINENO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "000100"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "DOCUMENTREFERENCEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAK"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAB"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICETYPECODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": null
+								}
+							]
+						}
+					},
+					{
+						"lineItemNumber": "000200",
+						"invoicedQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 16.0
+						},
+						"amountInclusiveAllowancesCharges": {
+							"currencyCode": "AUD",
+							"value": 2522.88
+						},
+						"deliveredQuantity": null,
+						"itemPriceBaseQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 19.71
+						},
+						"transactionalTradeItem": {
+							"gtin": "9341524456265",
+							"tradeItemQuantity": null,
+							"tradeItemDescription": {
+								"languageCode": null,
+								"value": "RHS-075-075-06.0-C350-PTD-08000"
+							},
+							"transactionalItemData": null,
+							"additionalTradeItemIdentification": [
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "BUYER_ASSIGNED",
+									"value": "00003183"
+								},
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "SELLER_ASSIGNED",
+									"value": "000000000000100998"
+								}
+							],
+							"avpList": {
+								"ecomStringAttributeValuePairList": []
+							}
+						},
+						"purchaseOrder": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": "000002"
+						},
+						"despatchAdvice": {
+							"entityIdentification": "0123114103"
+						},
+						"avpList": {
+							"ecomStringAttributeValuePairList": [
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERNO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "0011469929"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERLINENO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "000200"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "DOCUMENTREFERENCEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAK"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAB"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICETYPECODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": null
+								}
+							]
+						}
+					},
+					{
+						"lineItemNumber": "000300",
+						"invoicedQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 16.0
+						},
+						"amountInclusiveAllowancesCharges": {
+							"currencyCode": "AUD",
+							"value": 2627.84
+						},
+						"deliveredQuantity": null,
+						"itemPriceBaseQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 20.53
+						},
+						"transactionalTradeItem": {
+							"gtin": "9341524724791",
+							"tradeItemQuantity": null,
+							"tradeItemDescription": {
+								"languageCode": null,
+								"value": "RHS-089-089-05.0-C350-PTD-08000"
+							},
+							"transactionalItemData": null,
+							"additionalTradeItemIdentification": [
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "BUYER_ASSIGNED",
+									"value": "00003198"
+								},
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "SELLER_ASSIGNED",
+									"value": "000000000000101029"
+								}
+							],
+							"avpList": {
+								"ecomStringAttributeValuePairList": []
+							}
+						},
+						"purchaseOrder": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": "000003"
+						},
+						"despatchAdvice": {
+							"entityIdentification": "0123114103"
+						},
+						"avpList": {
+							"ecomStringAttributeValuePairList": [
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERNO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "0011469929"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERLINENO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "000300"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "DOCUMENTREFERENCEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAK"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAB"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICETYPECODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": null
+								}
+							]
+						}
+					},
+					{
+						"lineItemNumber": "000400",
+						"invoicedQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 15.0
+						},
+						"amountInclusiveAllowancesCharges": {
+							"currencyCode": "AUD",
+							"value": 2365.2
+						},
+						"deliveredQuantity": null,
+						"itemPriceBaseQuantity": {
+							"measurementUnitCode": "C62",
+							"value": 19.71
+						},
+						"transactionalTradeItem": {
+							"gtin": "9341524456531",
+							"tradeItemQuantity": null,
+							"tradeItemDescription": {
+								"languageCode": null,
+								"value": "RHS-100-050-06.0-C350-PTD-08000"
+							},
+							"transactionalItemData": null,
+							"additionalTradeItemIdentification": [
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "BUYER_ASSIGNED",
+									"value": "00003447"
+								},
+								{
+									"additionalTradeItemIdentificationTypeCode": null,
+									"additionalLogisticsUnitIdentificationTypeCode": "SELLER_ASSIGNED",
+									"value": "000000000000101110"
+								}
+							],
+							"avpList": {
+								"ecomStringAttributeValuePairList": []
+							}
+						},
+						"purchaseOrder": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": "000004"
+						},
+						"despatchAdvice": {
+							"entityIdentification": "0123114103"
+						},
+						"avpList": {
+							"ecomStringAttributeValuePairList": [
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERNO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "0011469929"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "SELLERORDERLINENO",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "000400"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "DOCUMENTREFERENCEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAK"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICEQUALIFIERCODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": "AAB"
+								},
+								{
+									"attributeName": null,
+									"qualifierCodeName": "PRICETYPECODE",
+									"qualifierCodeList": null,
+									"qualifierCodeListVersion": null,
+									"value": null
+								}
+							]
+						}
+					}
+				]
+			}
+		]
+	},
+	"organizationId": "string",
+	"buyerPartyIdentifier": "string",
+	"sellerPartyIdentifier": "string",
+	"routableType": 3
+}

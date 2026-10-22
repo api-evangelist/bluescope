@@ -1,0 +1,232 @@
+{
+    "OrderMessage": {
+        "StandardBusinessDocumentHeader": {
+            "HeaderVersion": "1.0",
+            "Sender": [
+                null
+            ],
+            "Receiver": [
+                null
+            ],
+            "DocumentIdentification": {
+                "Standard": "EAN.UCC",
+                "TypeVersion": "3.3",
+                "Type": "PURCHASE-ORDER",
+                "MultipleType": "false",
+                "InstanceIdentifier": "0000000012345678",
+                "CreationDateAndTime": "2019-10-30T11:05:02+00:00"
+            }
+        },
+        "Order": [
+            {
+                "DocumentStatusCode": "ORIGINAL",
+                "DocumentActionCode": "ADD",
+                "DocumentEffectiveDate": {
+                    "Date": "2019-10-30T00:33:00+00:00"
+                },
+                "OrderIdentification": {
+                    "EntityIdentification": "MyOrgOrder_000000001"
+                },
+                "CreationDateTime": "2019-10-30T11:05:02+00:00",
+                "Note": null,
+                "AdditionalOrderInstruction": [
+                    {
+                        "LanguageCode": "en",
+                        "Value": "NO B-DOUBLES. OPEN 0700-1500"
+                    }
+                ],
+                "Buyer": {
+                    "Gln": "xxxx",
+                    "AdditionalPartyIdentification": [
+                        {
+                            "AdditionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+                            "Value": "xxxxx"
+                        }
+                    ],
+                    "OrganisationDetails": {
+                        "OrganisationName": "xxxxx",
+                        "LegalRegistration": []
+                    },
+                    "Address": {
+                        "Name": "xxxxxx",
+                        "City": "xxxx",
+                        "CountryCode": null,
+                        "PostalCode": "xxxx",
+                        "State": "NSW",
+                        "StreetAddressOne": "xxxxx",
+                        "StreetAddressTwo": null
+                    },
+                    "Contact": [],
+                    "AvpList": {
+                        "EcomStringAttributeValuePairList": [
+                            {
+                                "AttributeName": null,
+                                "QualifierCodeName": "CUSTOMERLOCATIONIDENTIFIER",
+                                "QualifierCodeList": null,
+                                "QualifierCodeListVersion": null,
+                                "Value": "xxxxx"
+                            }
+                        ]
+                    }
+                },
+                "Seller": {
+                    "Gln": "9377779184349",
+                    "AdditionalPartyIdentification": [
+                        {
+                            "AdditionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+                            "Value": "9377779184349"
+                        }
+                    ],
+                    "OrganisationDetails": null,
+                    "Address": {
+                        "Name": "Bluescope-Distribution",
+                        "City": "xxxx",
+                        "CountryCode": null,
+                        "PostalCode": "xxxx",
+                        "State": "NSW",
+                        "StreetAddressOne": "xxxxx",
+                        "StreetAddressTwo": null
+                    },
+                    "Contact": [],
+                    "AvpList": {
+                        "EcomStringAttributeValuePairList": [
+                            {
+                                "AttributeName": null,
+                                "QualifierCodeName": "BSL_ORDER_TYPE",
+                                "QualifierCodeList": null,
+                                "QualifierCodeListVersion": null,
+                                "Value": "DOM"
+                            },
+                            {
+                                "AttributeName": null,
+                                "QualifierCodeName": "BSL_ORDER_CHANNEL",
+                                "QualifierCodeList": null,
+                                "QualifierCodeListVersion": null,
+                                "Value": "EDI"
+                            }
+                        ]
+                    }
+                },
+                "OrderLogisticalInformation": {
+                    "ShipTo": {
+                        "Gln": "GLN",
+                        "AdditionalPartyIdentification": [],
+                        "OrganisationDetails": null,
+                        "Address": null,
+                        "Contact": [],
+                        "AvpList": {
+                            "EcomStringAttributeValuePairList": [
+                                {
+                                    "AttributeName": "",
+                                    "QualifierCodeName": "SHIPTO",
+                                    "QualifierCodeList": null,
+                                    "QualifierCodeListVersion": null,
+                                    "Value": "002"
+                                }
+                            ]
+                        }
+                    }
+                },
+                "OrderLineItem": [
+                    {
+                        "LineItemNumber": "1",
+                        "Note": null,
+                        "OrderLineUOM": null,
+                        "RequestedQuantity": {
+                            "MeasurementUnitCode": "C62",
+                            "Quantity": 50.00
+                        },
+                        "NetPrice": {
+                            "CurrencyCode": "AUD",
+                            "Value": 1.65
+                        },
+                        "NetAmount": {
+                            "CurrencyCode": "AUD",
+                            "Value": 82.50
+                        },
+                        "ItemPriceBaseQuantity": null,
+                        "TransactionalTradeItem": {
+                            "Gtin": null,
+                            "TradeItemQuantity": null,
+                            "TradeItemDescription": null,
+                            "TransactionalItemData": [],
+                            "AdditionalTradeItemIdentification": [],
+                            "AvpList": null
+                        },
+                        "MaterialSpecification": {
+                            "EntityIdentification": "DPB10050CN"
+                        },
+                        "OrderLineItemDetail": [
+                            {
+                                "OrderLogisticalInformation": {
+                                    "OrderLogisticalDateInformation": {
+                                        "RequestedDeliveryDateRange": {
+                                            "BeginDate": "2019-10-21T00:00:00+00:00",
+                                            "EndDate": "2019-10-21T00:00:00+00:00"
+                                        },
+                                        "RequestedDeliveryDateTime": {
+                                            "Date": "2019-10-21T00:00:00+00:00"
+                                        }
+                                    },
+                                    "ShipTo": null
+                                },
+                                "AvpList": null
+                            }
+                        ],
+                        "AdditionalOrderLineInstruction": [],
+                        "AvpList": null
+                    },
+                    {
+                        "LineItemNumber": "2",
+                        "Note": null,
+                        "OrderLineUOM": null,
+                        "RequestedQuantity": {
+                            "MeasurementUnitCode": "C62",
+                            "Quantity": 50.00
+                        },
+                        "NetPrice": {
+                            "CurrencyCode": "AUD",
+                            "Value": 0.83
+                        },
+                        "NetAmount": {
+                            "CurrencyCode": "AUD",
+                            "Value": 41.50
+                        },
+                        "ItemPriceBaseQuantity": null,
+                        "TransactionalTradeItem": null,
+                        "MaterialSpecification": {
+                            "EntityIdentification": "DPB10050CV"
+                        },
+                        "OrderLineItemDetail": [
+                            {
+                                "OrderLogisticalInformation": {
+                                    "OrderLogisticalDateInformation": {
+                                        "RequestedDeliveryDateRange": {
+                                            "BeginDate": "2019-10-21T00:00:00+00:00",
+                                            "EndDate": "2019-10-21T00:00:00+00:00"
+                                        },
+                                        "RequestedDeliveryDateTime": {
+                                            "Date": "2019-10-21T00:00:00+00:00"
+                                        }
+                                    },
+                                    "ShipTo": null
+                                },
+                                "AvpList": null
+                            }
+                        ],
+                        "AdditionalOrderLineInstruction": [],
+                        "AvpList": null
+                    }
+                ],
+                "DeliveryTerms": null,
+                "PickupFrom": null,
+                "QuoteNumber": null,
+                "AvpList": null
+            }
+        ],
+        "OrganizationId": "xxxx",
+        "BuyerPartyIdentifier": "xxxx",
+        "SellerPartyIdentifier": "9377779184349"
+    }
+
+}

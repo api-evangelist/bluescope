@@ -1,0 +1,315 @@
+{
+  "OrderMessage": {
+    "StandardBusinessDocumentHeader": {
+      "HeaderVersion": null,
+      "Sender": [
+        {
+          "Authority": "EAN.UCC",
+          "Value": "GLN"
+        }
+      ],
+      "Receiver": [
+        {
+          "Authority": "EAN.UCC",
+          "Value": "GLN"
+        }
+      ],
+      "DocumentIdentification": {
+        "Standard": null,
+        "TypeVersion": null,
+        "Type": "PURCHASE-ORDER",
+        "MultipleType": null,
+        "InstanceIdentifier": "000000000500",
+        "CreationDateAndTime": "2020-07-23T17:21:01.2754653+10:00"
+      }
+    },
+    "Order": [
+      {
+        "AllowanceCharge": [
+          {
+            "AllowanceChargeAmount": {
+              "CurrencyCode": "AUD",
+              "Value": 0.0
+            },
+            "BaseNumberOfUnits": {
+              "Value": 1,
+              "MeasurementUnitCode": ""
+            },
+            "AmountPerUnit": {
+              "CurrencyCode": "AUD",
+              "Value": 0.0
+            },
+            "AllowanceChargeType": "FC",
+            "AllowanceOrChargeType": "CHARGE",
+            "SettlementType": "6",
+            "SequenceNumber": 1
+          }
+        ],
+        "DocumentStatusCode": null,
+        "DocumentActionCode": null,
+        "DocumentEffectiveDate": {
+          "Date": "2020-07-17T00:00:00"
+        },
+        "OrderIdentification": {
+          "EntityIdentification": "testorder"
+        },
+        "CreationDateTime": "2020-07-23T17:21:01.2754653+10:00",
+        "Note": null,
+        "AdditionalOrderInstruction": null,
+        "Buyer": {
+          "Gln": "BuyerOrgID",
+          "AdditionalPartyIdentification": [
+            {
+              "AdditionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+              "Value": "BuyerOrgID"
+            }
+          ],
+          "OrganisationDetails": {
+            "OrganisationName": "BuyerOrganisation Name",
+            "LegalRegistration": null
+          },
+          "Address": {
+            "Name": "BuyerOrgID",
+            "City": null,
+            "CountryCode": null,
+            "PostalCode": "",
+            "State": "",
+            "StreetAddressOne": "",
+            "StreetAddressTwo": ""
+          },
+          "Contact": null,
+          "AvpList": {
+            "EcomStringAttributeValuePairList": [
+              {
+                "AttributeName": null,
+                "QualifierCodeName": "CUSTOMERLOCATIONIDENTIFIER",
+                "QualifierCodeList": null,
+                "QualifierCodeListVersion": null,
+                "Value": "BuyerOrgID"
+              }
+            ]
+          }
+        },
+        "Seller": {
+          "Gln": "BSL-CIPA",
+          "AdditionalPartyIdentification": [
+            {
+              "AdditionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+              "Value": "BSL-CIPA"
+            }
+          ],
+          "OrganisationDetails": {
+            "OrganisationName": "BSL-CIPA",
+            "LegalRegistration": null
+          },
+          "Address": {
+            "Name": "0005400013",
+            "City": null,
+            "CountryCode": null,
+            "PostalCode": "",
+            "State": "",
+            "StreetAddressOne": "",
+            "StreetAddressTwo": ""
+          },
+          "Contact": null,
+          "AvpList": {
+            "EcomStringAttributeValuePairList": [
+              {
+                "AttributeName": null,
+                "QualifierCodeName": "CUSTOMERLOCATIONIDENTIFIER",
+                "QualifierCodeList": null,
+                "QualifierCodeListVersion": null,
+                "Value": "BuyerOrgID"
+              }
+            ]
+          }
+        },
+        "OrderLogisticalInformation": {
+          "ShipTo": {
+            "Gln": null,
+            "AdditionalPartyIdentification": null,
+            "OrganisationDetails": null,
+            "Address": "",
+            "Contact": "",
+            "AvpList": {
+              "EcomStringAttributeValuePairList": [
+                {
+                  "AttributeName": null,
+                  "QualifierCodeName": "SHIPTO",
+                  "QualifierCodeList": null,
+                  "QualifierCodeListVersion": null,
+                  "Value": "BuyerOrgID"
+                }
+              ]
+            }
+          }
+        },
+        "OrderLineItem": [
+          {
+            "LineItemNumber": "0001",
+            "Note": null,
+            "OrderLineUOM": null,
+            "RequestedQuantity": {
+              "MeasurementUnitCode": "TNE",
+              "Quantity": 12.0
+            },
+            "NetPrice": {
+              "CurrencyCode": "AUD",
+              "Value": 1220.0
+            },
+            "NetAmount": null,
+            "ItemPriceBaseQuantity": {
+              "MeasurementUnitCode": "TNE",
+              "Quantity": 1.0
+            },
+            "TransactionalTradeItem": {
+              "Gtin": "",
+              "TradeItemQuantity": null,
+              "TradeItemDescription": {
+                "LanguageCode": null,
+                "Value": "PLS 10 x 2400 x 6000 G250 PATTERN"
+              },
+              "TransactionalItemData": null,
+              "AdditionalTradeItemIdentification": null,
+              "AvpList": null
+            },
+            "MaterialSpecification": {
+              "EntityIdentification": "00002407"
+            },
+            "OrderLineItemDetail": [
+              {
+                "OrderLogisticalInformation": {
+                  "OrderLogisticalDateInformation": {
+                    "RequestedDeliveryDateRange": {
+                      "BeginDate": "2020-07-17T00:00:00",
+                      "EndDate": "2020-07-17T00:00:00"
+                    },
+                    "RequestedDeliveryDateTime": {
+                      "Date": "2020-07-17T00:00:00"
+                    }
+                  },
+                  "ShipTo": {
+                    "Gln": null,
+                    "AdditionalPartyIdentification": null,
+                    "OrganisationDetails": null,
+                    "Address": {
+                      "Name": "SQS WACOL",
+                      "City": null,
+                      "CountryCode": null,
+                      "PostalCode": "4076",
+                      "State": "QLD",
+                      "StreetAddressOne": "97 COULSON STREET",
+                      "StreetAddressTwo": "WACOL"
+                    },
+                    "Contact": "",
+                    "AvpList": {
+                      "EcomStringAttributeValuePairList": [
+                        {
+                          "AttributeName": null,
+                          "QualifierCodeName": "SHIPTO",
+                          "QualifierCodeList": null,
+                          "QualifierCodeListVersion": null,
+                          "Value": "BuyerOrgShipTo"
+                        }
+                      ]
+                    }
+                  },
+                  "AvpList": null
+                }
+              }
+            ],
+            "AdditionalOrderLineInstruction": null,
+            "AvpList": null
+          },
+          {
+            "LineItemNumber": "0002",
+            "Note": null,
+            "OrderLineUOM": null,
+            "RequestedQuantity": {
+              "MeasurementUnitCode": "TNE",
+              "Quantity": 40.0
+            },
+            "NetPrice": {
+              "CurrencyCode": "AUD",
+              "Value": 1280.0
+            },
+            "NetAmount": null,
+            "ItemPriceBaseQuantity": {
+              "MeasurementUnitCode": "TNE",
+              "Quantity": 1.0
+            },
+            "TransactionalTradeItem": {
+              "Gtin": "",
+              "TradeItemQuantity": null,
+              "TradeItemDescription": {
+                "LanguageCode": null,
+                "Value": "PLS 20 x 2400 x 9000 G250 PATTERN"
+              },
+              "TransactionalItemData": null,
+              "AdditionalTradeItemIdentification": null,
+              "AvpList": null
+            },
+            "MaterialSpecification": {
+              "EntityIdentification": "00002443"
+            },
+            "OrderLineItemDetail": [
+              {
+                "OrderLogisticalInformation": {
+                  "OrderLogisticalDateInformation": {
+                    "RequestedDeliveryDateRange": {
+                      "BeginDate": "2020-07-17T00:00:00",
+                      "EndDate": "2020-07-17T00:00:00"
+                    },
+                    "RequestedDeliveryDateTime": {
+                      "Date": "2020-07-17T00:00:00"
+                    }
+                  },
+                  "ShipTo": {
+                    "Gln": null,
+                    "AdditionalPartyIdentification": null,
+                    "OrganisationDetails": null,
+                    "Address": {
+                      "Name": "SQS WACOL",
+                      "City": null,
+                      "CountryCode": null,
+                      "PostalCode": "4076",
+                      "State": "QLD",
+                      "StreetAddressOne": "97 COULSON STREET",
+                      "StreetAddressTwo": "WACOL"
+                    },
+                    "Contact": "",
+                    "AvpList": {
+                      "EcomStringAttributeValuePairList": [
+                        {
+                          "AttributeName": null,
+                          "QualifierCodeName": "SHIPTO",
+                          "QualifierCodeList": null,
+                          "QualifierCodeListVersion": null,
+                          "Value": "BuyerOrgShipTo"
+                        }
+                      ]
+                    }
+                  },
+                  "AvpList": null
+                }
+              }
+            ],
+            "AdditionalOrderLineInstruction": null,
+            "AvpList": null
+          }
+        ],
+        "DeliveryTerms": null,
+        "PickupFrom": null,
+        "QuoteNumber": null,
+        "AvpList": null,
+        "PromotionalDeal": {
+          "EntityIdentification": "750572"
+        }
+      }
+    ]
+  },
+  "OrganizationId": "BuyerOrgID",
+  "BuyerPartyIdentifier": "BuyerOrgID",
+  "SellerPartyIdentifier": "BSL-CIPA",
+  "RoutableType": 0
+}

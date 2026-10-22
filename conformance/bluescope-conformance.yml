@@ -1,0 +1,11 @@
+generated: '2026-10-21'
+method: searched
+source: https://developer.apiaut.bluescope.com/GettingStartedPage_Authentication
+standards:
+- id: oauth2
+  conforms: true
+  evidence: "https://developer.apiaut.bluescope.com/GettingStartedPage_Authentication — 'This uses Microsoft's Oauth2.0 bearer token retrieval api' (Azure AD token endpoint, client_id/client_secret/resource)."
+- id: gs1-edi
+  conforms: true
+  domain_standard: true
+  evidence: "https://developer.apiaut.bluescope.com/GettingStartedPage_SendingPOs — orders may be sent 'in a GS1 or an ASI format'; GS1 Transport Instruction / Transport Status documents (https://developer.apiaut.bluescope.com/GettingStartedPage_LogisticsVendorTransportEDI_SendingGS1TS). The GS1 purchase order examples saved in examples/ carry a StandardBusinessDocumentHeader (GS1 SBDH). No OpenAPI contract is held, so this rests on the docs and published schemas/examples, not a contract."

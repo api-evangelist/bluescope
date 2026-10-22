@@ -1,0 +1,21 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/bluescope/integrations
+- https://n8n.io/integrations/bluescope/
+- https://composio.dev/toolkits/bluescope
+- https://monid.ai/tools/bluescope
+checked:
+- https://composio.dev/toolkits/bluescope
+- https://monid.ai/tools/bluescope
+- https://n8n.io/integrations/bluescope/
+- https://zapier.com/apps/bluescope/integrations
+- https://developer.apiaut.bluescope.com/
+- https://developer.apiaut.bluescope.com/GettingStartedPage
+- https://developer.apiaut.bluescope.com/FAQ
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No integrations, partners or marketplace listings are named on the public Developer Centre; it serves B2B
+  EDI trading partners directly (HTTPS endpoint or SFTP delivery configured at onboarding).

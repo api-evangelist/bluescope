@@ -1,0 +1,37 @@
+generated: '2026-10-21'
+method: searched
+source: https://developer.apiaut.bluescope.com/GettingStartedPage
+sources:
+- https://developer.apiaut.bluescope.com/GettingStartedPage
+- https://developer.apiaut.bluescope.com/GettingStartedPage_SendingPOs
+- https://developer.apiaut.bluescope.com/GettingStartedPage_SubscriptionKeys
+- https://developer.apiaut.bluescope.com/FAQ
+note: No OpenAPI is held; conventions are read from the Developer Centre Getting Started pages only. Anything not stated there is recorded as undocumented.
+style: REST over HTTP; "flexibility to send and receive xml or json formats"; EDI messages in GS1 or ASI format.
+auth:
+  summary: Azure AD OAuth 2.0 bearer token (Authorization header) plus Ocp-Apim-Subscription-Key header (or subscription-key query parameter).
+  see: authentication/bluescope-authentication.yml
+asynchrony:
+  statement: "For an asynchronous message you should receive a 202 created response code, on the other hand for a synchronous api call you will get a 200 ok response code."
+  source: https://developer.apiaut.bluescope.com/GettingStartedPage_SendingPOs
+outbound_delivery:
+  statement: Inbound-to-partner documents (e.g. GS1 Transport Instruction) are delivered by BlueScope to a partner HTTPS endpoint or SFTP folder configured at onboarding.
+  source: "https://developer.apiaut.bluescope.com/GettingStartedPage_LogisticsVendorTransportEDI_Receiving GS1TS"
+idempotency:
+  coverage: none
+  note: No idempotency key or replay-protection mechanism is documented on the public pages. Purchase orders carry a sales order identification number (Id parameter), but the docs do not say duplicates are rejected.
+pagination:
+  documented: false
+versioning:
+  documented: false
+  note: API names carry a version suffix (e.g. 'Sales Order Process Api - v1'); no versioning policy is published.
+errors:
+  documented: false
+  note: The docs say each API detail page (subscriber-only) lists response codes and messages; no public error reference.
+rate_limit_signaling:
+  documented: false
+request_id:
+  documented: false
+reversibility:
+  status: none
+  note: No cancel, amend or reversal operation and no reversal window is documented for purchase orders or Transport Status messages on the public pages.

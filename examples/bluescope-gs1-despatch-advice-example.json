@@ -1,0 +1,756 @@
+{
+	"despatchAdviceMessage": {
+		"standardBusinessDocumentHeader": {
+			"despatchAdviceDateTime": "2020-03-31T09:43:00+00:00",
+			"despatchAdviceTypeCode": "351",
+			"despatchAdviceFunctionCode": "9",
+			"headerVersion": "1.0",
+			"sender": [
+				{
+					"authority": "EAN.UCC",
+					"value": "GLN"
+				}
+			],
+			"receiver": [
+				{
+					"authority": "EAN.UCC",
+					"value": "GLN"
+				}
+			],
+			"documentIdentification": {
+				"standard": "EAN.UCC",
+				"typeVersion": "3.3",
+				"type": "DESPATCH-ADVICE",
+				"multipleType": "False",
+				"instanceIdentifier": "123114103-2020-03-30T22:44:09.759Z",
+				"creationDateAndTime": "2020-03-30T22:44:09.7592649+00:00"
+			}
+		},
+		"despatchAdvice": [
+			{
+				"creationDateTime": "2020-03-30T22:44:09.7779763+00:00",
+				"documentStatusCode": "ORIGINAL",
+				"despatchAdviceIdentification": {
+					"entityIdentification": "123114103"
+				},
+				"deliveryTypeCode": "COMPLETE_DELIVERY",
+				"buyer": {
+					"gln": "GLN",
+					"additionalPartyIdentification": [
+						{
+							"additionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+							"value": "xxxxxx",
+							"name": null
+						},
+						{
+							"additionalPartyIdentificationTypeCode": "SELLER_ASSIGNED_IDENTIFIER_FOR_A_PARTY",
+							"value": "xxxxxx",
+							"name": null
+						}
+					],
+					"organisationDetails": null,
+					"address": null,
+					"contact": null,
+					"avpList": {
+						"ecomStringAttributeValuePairList": [
+							{
+								"attributeName": null,
+								"qualifierCodeName": "PARTYNAME",
+								"qualifierCodeList": null,
+								"qualifierCodeListVersion": null,
+								"value": "xxxxxx"
+							}
+						]
+					}
+				},
+				"seller": {
+					"gln": "GLN",
+					"additionalPartyIdentification": [
+						{
+							"additionalPartyIdentificationTypeCode": "FOR_INTERNAL_USE_1",
+							"value": "9341524005579",
+							"name": null
+						}
+					],
+					"organisationDetails": null,
+					"address": null,
+					"contact": null,
+					"avpList": {
+						"ecomStringAttributeValuePairList": [
+							{
+								"attributeName": null,
+								"qualifierCodeName": "PARTYNAME",
+								"qualifierCodeList": null,
+								"qualifierCodeListVersion": null,
+								"value": "ORRCON STEEL"
+							}
+						]
+					}
+				},
+				"consignor": null,
+				"shipFrom": {
+					"gln": "GLN",
+					"additionalPartyIdentification": [
+						{
+							"additionalPartyIdentificationTypeCode": null,
+							"value": "Orrcon Manufacturing",
+							"name": null
+						}
+					],
+					"address": null
+				},
+				"shipTo": {
+					"gln": "GLN",
+					"additionalPartyIdentification": [
+						{
+							"additionalPartyIdentificationTypeCode": null,
+							"value": "xxxxx",
+							"name": "xxxxxxx"
+						}
+					],
+					"address": {
+						"name": null,
+						"city": null,
+						"countryCode": null,
+						"postalCode": null,
+						"state": null,
+						"streetAddressOne": null,
+						"streetAddressTwo": null
+					}
+				},
+				"carrier": {
+					"gln": "GLN",
+					"additionalPartyIdentification": [
+						{
+							"additionalPartyIdentificationTypeCode": null,
+							"value": null,
+							"name": null
+						},
+						{
+							"additionalPartyIdentificationTypeCode": null,
+							"value": null,
+							"name": null
+						}
+					],
+					"organisationDetails": null,
+					"address": null,
+					"contact": null,
+					"avpList": {
+						"ecomStringAttributeValuePairList": [
+							{
+								"attributeName": null,
+								"qualifierCodeName": "PARTYNAME",
+								"qualifierCodeList": null,
+								"qualifierCodeListVersion": null,
+								"value": null
+							}
+						]
+					}
+				},
+				"despatchInformation": {
+					"actualShipDateTime": "2020-04-27T00:00:00+00:00",
+					"estimatedDeliveryDateTime": "2020-04-27T00:00:00+00:00"
+				},
+				"despatchAdviceTransportInformation": {
+					"transportMeansId": null,
+					"transportModeCode": "Item1",
+					"transportMeansTypeCode": null
+				},
+				"despatchAdviceTotals": {
+					"packageTotal": {
+						"totalGrossWeight": {
+							"measurementUnitCode": "KGM",
+							"value": 5863.78,
+							"minimumValue": 0.0,
+							"maximumValue": 0.0
+						}
+					}
+				},
+				"despatchAdviceLogisticUnit": {
+					"logisticUnitIdentification": {
+						"additionalLogisticsUnitIdentification": [
+							{
+								"additionalLogisticsUnitIdentificationTypeCode": "SHIPPER_ASSIGNED",
+								"value": "123114103"
+							}
+						]
+					}
+				},
+				"despatchAdviceLineItem": [
+					{
+						"lineItemNumber": "1",
+						"despatchedQuantity": "1",
+						"requestedItemIdentification": {
+							"additionalTradeItemIdentification": {
+								"additionalTradeItemIdentificationTypeCode": "BUYER_ASSIGNED",
+								"additionalLogisticsUnitIdentificationTypeCode": null,
+								"value": "00002163"
+							}
+						},
+						"customerReference": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": null
+						},
+						"purchaseOrder": {
+							"entityIdentification": "0011469929",
+							"lineItemNumber": "000100"
+						},
+						"transactionalTradeItem": [
+							{
+								"gtin": "9341524738118",
+								"tradeItemQuantity": null,
+								"tradeItemDescription": null,
+								"transactionalItemData": [
+									{
+										"serialNumber": "",
+										"transactionalItemDimensions": null,
+										"transactionalItemWeight": [
+											{
+												"measurementTypeCode": "UNIT_QUANTITY",
+												"measurementUnitCode": "C62",
+												"value": 127.0
+											},
+											{
+												"measurementTypeCode": "UNIT_GROSS_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1287.78
+											},
+											{
+												"measurementTypeCode": "UNIT_NET_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1287.78
+											}
+										],
+										"avpList": {
+											"ecomStringAttributeValuePairList": [
+												{
+													"attributeName": null,
+													"qualifierCodeName": "STEELGRADENAME",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": null
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "PACKNUMBER_931234/6",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "931234/6"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "CP-020.0-M-C250-BLK-PE-06500"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "SUPPLIERARTICLENUMBER",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "000000000000198410"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "CP-020.0-M-C250-BLK-PE-06500"
+												}
+											]
+										}
+									}
+								],
+								"additionalTradeItemIdentification": [
+									{
+										"additionalTradeItemIdentificationTypeCode": null,
+										"additionalLogisticsUnitIdentificationTypeCode": "SUPPLIER_ASSIGNED",
+										"value": "000000000000198410"
+									}
+								],
+								"avpList": null
+							}
+						],
+						"deliveryNote": null
+					},
+					{
+						"lineItemNumber": "2",
+						"despatchedQuantity": "1",
+						"requestedItemIdentification": {
+							"additionalTradeItemIdentification": {
+								"additionalTradeItemIdentificationTypeCode": "BUYER_ASSIGNED",
+								"additionalLogisticsUnitIdentificationTypeCode": null,
+								"value": "00003183"
+							}
+						},
+						"customerReference": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": null
+						},
+						"purchaseOrder": {
+							"entityIdentification": "0011469929",
+							"lineItemNumber": "000200"
+						},
+						"transactionalTradeItem": [
+							{
+								"gtin": "9341524456265",
+								"tradeItemQuantity": null,
+								"tradeItemDescription": null,
+								"transactionalItemData": [
+									{
+										"serialNumber": "",
+										"transactionalItemDimensions": [
+											{
+												"width": {
+													"measurementUnitCode": "MM",
+													"value": 0.0,
+													"minimumValue": 0.0,
+													"maximumValue": 0.0
+												},
+												"thick": null,
+												"weight": null
+											}
+										],
+										"transactionalItemWeight": [
+											{
+												"measurementTypeCode": "UNIT_QUANTITY",
+												"measurementUnitCode": "C62",
+												"value": 16.0
+											},
+											{
+												"measurementTypeCode": "UNIT_GROSS_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1536.0
+											},
+											{
+												"measurementTypeCode": "UNIT_NET_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1536.0
+											}
+										],
+										"avpList": {
+											"ecomStringAttributeValuePairList": [
+												{
+													"attributeName": null,
+													"qualifierCodeName": "STEELGRADENAME",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": null
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "PACKNUMBER_944135/36",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "944135/36"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "RHS-075-075-06.0-C350-PTD-08000"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "SUPPLIERARTICLENUMBER",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "000000000000100998"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSUNITCODE",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "MTR"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESS",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "6000.000"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSMIN",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSMAX",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHUNITCODE",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "MTR"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHMIN",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHMAX",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "RHS-075-075-06.0-C350-PTD-08000"
+												}
+											]
+										}
+									}
+								],
+								"additionalTradeItemIdentification": [
+									{
+										"additionalTradeItemIdentificationTypeCode": null,
+										"additionalLogisticsUnitIdentificationTypeCode": "SUPPLIER_ASSIGNED",
+										"value": "000000000000100998"
+									}
+								],
+								"avpList": null
+							}
+						],
+						"deliveryNote": null
+					},
+					{
+						"lineItemNumber": "3",
+						"despatchedQuantity": "1",
+						"requestedItemIdentification": {
+							"additionalTradeItemIdentification": {
+								"additionalTradeItemIdentificationTypeCode": "BUYER_ASSIGNED",
+								"additionalLogisticsUnitIdentificationTypeCode": null,
+								"value": "00003198"
+							}
+						},
+						"customerReference": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": null
+						},
+						"purchaseOrder": {
+							"entityIdentification": "0011469929",
+							"lineItemNumber": "000300"
+						},
+						"transactionalTradeItem": [
+							{
+								"gtin": "9341524724791",
+								"tradeItemQuantity": null,
+								"tradeItemDescription": null,
+								"transactionalItemData": [
+									{
+										"serialNumber": "",
+										"transactionalItemDimensions": [
+											{
+												"width": {
+													"measurementUnitCode": "MM",
+													"value": 0.0,
+													"minimumValue": 0.0,
+													"maximumValue": 0.0
+												},
+												"thick": null,
+												"weight": null
+											}
+										],
+										"transactionalItemWeight": [
+											{
+												"measurementTypeCode": "UNIT_QUANTITY",
+												"measurementUnitCode": "C62",
+												"value": 16.0
+											},
+											{
+												"measurementTypeCode": "UNIT_GROSS_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1600.0
+											},
+											{
+												"measurementTypeCode": "UNIT_NET_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1600.0
+											}
+										],
+										"avpList": {
+											"ecomStringAttributeValuePairList": [
+												{
+													"attributeName": null,
+													"qualifierCodeName": "STEELGRADENAME",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": null
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "PACKNUMBER_948738/50",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "948738/50"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "RHS-089-089-05.0-C350-PTD-08000"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "SUPPLIERARTICLENUMBER",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "000000000000101029"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSUNITCODE",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "MTR"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESS",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "5000.000"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSMIN",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSMAX",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHUNITCODE",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "MTR"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHMIN",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHMAX",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "RHS-089-089-05.0-C350-PTD-08000"
+												}
+											]
+										}
+									}
+								],
+								"additionalTradeItemIdentification": [
+									{
+										"additionalTradeItemIdentificationTypeCode": null,
+										"additionalLogisticsUnitIdentificationTypeCode": "SUPPLIER_ASSIGNED",
+										"value": "000000000000101029"
+									}
+								],
+								"avpList": null
+							}
+						],
+						"deliveryNote": null
+					},
+					{
+						"lineItemNumber": "4",
+						"despatchedQuantity": "1",
+						"requestedItemIdentification": {
+							"additionalTradeItemIdentification": {
+								"additionalTradeItemIdentificationTypeCode": "BUYER_ASSIGNED",
+								"additionalLogisticsUnitIdentificationTypeCode": null,
+								"value": "00003447"
+							}
+						},
+						"customerReference": {
+							"entityIdentification": "4A-PO-P9999x923",
+							"lineItemNumber": null
+						},
+						"purchaseOrder": {
+							"entityIdentification": "0011469929",
+							"lineItemNumber": "000400"
+						},
+						"transactionalTradeItem": [
+							{
+								"gtin": "9341524456531",
+								"tradeItemQuantity": null,
+								"tradeItemDescription": null,
+								"transactionalItemData": [
+									{
+										"serialNumber": "",
+										"transactionalItemDimensions": [
+											{
+												"width": {
+													"measurementUnitCode": "MM",
+													"value": 0.0,
+													"minimumValue": 0.0,
+													"maximumValue": 0.0
+												},
+												"thick": null,
+												"weight": null
+											}
+										],
+										"transactionalItemWeight": [
+											{
+												"measurementTypeCode": "UNIT_QUANTITY",
+												"measurementUnitCode": "C62",
+												"value": 15.0
+											},
+											{
+												"measurementTypeCode": "UNIT_GROSS_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1440.0
+											},
+											{
+												"measurementTypeCode": "UNIT_NET_WEIGHT",
+												"measurementUnitCode": "KGM",
+												"value": 1440.0
+											}
+										],
+										"avpList": {
+											"ecomStringAttributeValuePairList": [
+												{
+													"attributeName": null,
+													"qualifierCodeName": "STEELGRADENAME",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": null
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "PACKNUMBER_934698/37",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "934698/37"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "RHS-100-050-06.0-C350-PTD-08000"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "SUPPLIERARTICLENUMBER",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "000000000000101110"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSUNITCODE",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "MTR"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESS",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "6000.000"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSMIN",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTTHICKNESSMAX",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHUNITCODE",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "MTR"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHMIN",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.PRODUCTWIDTHMAX",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "0"
+												},
+												{
+													"attributeName": null,
+													"qualifierCodeName": "ITEMSPEC.ITEMDESCRIPTION",
+													"qualifierCodeList": null,
+													"qualifierCodeListVersion": null,
+													"value": "RHS-100-050-06.0-C350-PTD-08000"
+												}
+											]
+										}
+									}
+								],
+								"additionalTradeItemIdentification": [
+									{
+										"additionalTradeItemIdentificationTypeCode": null,
+										"additionalLogisticsUnitIdentificationTypeCode": "SUPPLIER_ASSIGNED",
+										"value": "000000000000101110"
+									}
+								],
+								"avpList": null
+							}
+						],
+						"deliveryNote": null
+					}
+				]
+			}
+		]
+	},
+	"organizationId": "xxxxx",
+	"buyerPartyIdentifier": "xxxxx",
+	"sellerPartyIdentifier": "9341524005579",
+	"routableType": 2
+}

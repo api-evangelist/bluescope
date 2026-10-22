@@ -1,0 +1,25 @@
+name: BlueScope MCP Server
+type: MCPServer
+generated: '2026-10-21'
+method: none
+status: none
+note: >-
+  No official MCP server found. https://www.bluescope.com/mcp returned 403, but the control
+  path returned 403 as well (edge refuses before routing, so opaque, not evidence of a server).
+  https://www.bluescope.com/.well-known/mcp.json and https://developer.apiaut.bluescope.com/.well-known/mcp.json
+  returned 404 (2026-10-21). No candidate tool list was derived because no OpenAPI is
+  public: the Developer Centre (Azure API Management) shows API definitions only to
+  signed-in, approved subscribers.
+probes:
+- url: https://www.bluescope.com/mcp
+  status: 403
+  verdict: opaque (control path also 403)
+- url: https://www.bluescope.com/.well-known/mcp.json
+  status: 404
+- url: https://developer.apiaut.bluescope.com/.well-known/mcp.json
+  status: 404
+tools: []
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed

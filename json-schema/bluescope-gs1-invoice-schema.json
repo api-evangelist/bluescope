@@ -1,0 +1,1846 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "invoiceMessage": {
+      "type": "object",
+      "properties": {
+        "standardBusinessDocumentHeader": {
+          "type": "object",
+          "properties": {
+            "headerVersion": {
+              "type": "string"
+            },
+            "sender": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "authority": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "authority",
+                    "value"
+                  ]
+                }
+              ]
+            },
+            "receiver": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "authority": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "authority",
+                    "value"
+                  ]
+                }
+              ]
+            },
+            "documentIdentification": {
+              "type": "object",
+              "properties": {
+                "standard": {
+                  "type": "string"
+                },
+                "typeVersion": {
+                  "type": "string"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "multipleType": {
+                  "type": "string"
+                },
+                "instanceIdentifier": {
+                  "type": "string"
+                },
+                "creationDateAndTime": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "standard",
+                "typeVersion",
+                "type",
+                "multipleType",
+                "instanceIdentifier",
+                "creationDateAndTime"
+              ]
+            }
+          },
+          "required": [
+            "headerVersion",
+            "sender",
+            "receiver",
+            "documentIdentification"
+          ]
+        },
+        "invoice": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "creationDateTime": {
+                  "type": "string"
+                },
+                "documentStatusCode": {
+                  "type": "string"
+                },
+                "invoiceIdentification": {
+                  "type": "object",
+                  "properties": {
+                    "entityIdentification": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "entityIdentification"
+                  ]
+                },
+                "invoiceType": {
+                  "type": "string"
+                },
+                "invoiceCurrencyCode": {
+                  "type": "string"
+                },
+                "buyer": {
+                  "type": "object",
+                  "properties": {
+                    "gln": {
+                      "type": "string"
+                    },
+                    "additionalPartyIdentification": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "additionalPartyIdentificationTypeCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "additionalPartyIdentificationTypeCode",
+                            "value",
+                            "name"
+                          ]
+                        },
+                        {
+                          "type": "object",
+                          "properties": {
+                            "additionalPartyIdentificationTypeCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "additionalPartyIdentificationTypeCode",
+                            "value",
+                            "name"
+                          ]
+                        }
+                      ]
+                    },
+                    "organisationDetails": {
+                      "type": "object",
+                      "properties": {
+                        "organisationName": {
+                          "type": "string"
+                        },
+                        "legalRegistration": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "organisationName",
+                        "legalRegistration"
+                      ]
+                    },
+                    "address": {
+                      "type": "null"
+                    },
+                    "contact": {
+                      "type": "null"
+                    },
+                    "avpList": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "gln",
+                    "additionalPartyIdentification",
+                    "organisationDetails",
+                    "address",
+                    "contact",
+                    "avpList"
+                  ]
+                },
+                "seller": {
+                  "type": "object",
+                  "properties": {
+                    "gln": {
+                      "type": "string"
+                    },
+                    "additionalPartyIdentification": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "additionalPartyIdentificationTypeCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "string"
+                            },
+                            "name": {
+                              "type": "null"
+                            }
+                          },
+                          "required": [
+                            "additionalPartyIdentificationTypeCode",
+                            "value",
+                            "name"
+                          ]
+                        }
+                      ]
+                    },
+                    "organisationDetails": {
+                      "type": "object",
+                      "properties": {
+                        "organisationName": {
+                          "type": "string"
+                        },
+                        "legalRegistration": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "legalRegistrationType": {
+                                  "type": "string"
+                                },
+                                "legalRegistrationNumber": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "legalRegistrationType",
+                                "legalRegistrationNumber"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "organisationName",
+                        "legalRegistration"
+                      ]
+                    },
+                    "address": {
+                      "type": "null"
+                    },
+                    "contact": {
+                      "type": "null"
+                    },
+                    "avpList": {
+                      "type": "object",
+                      "properties": {
+                        "ecomStringAttributeValuePairList": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "attributeName": {
+                                  "type": "null"
+                                },
+                                "qualifierCodeName": {
+                                  "type": "string"
+                                },
+                                "qualifierCodeList": {
+                                  "type": "null"
+                                },
+                                "qualifierCodeListVersion": {
+                                  "type": "null"
+                                },
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "attributeName",
+                                "qualifierCodeName",
+                                "qualifierCodeList",
+                                "qualifierCodeListVersion",
+                                "value"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "ecomStringAttributeValuePairList"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "gln",
+                    "additionalPartyIdentification",
+                    "organisationDetails",
+                    "address",
+                    "contact",
+                    "avpList"
+                  ]
+                },
+                "invoiceTotals": {
+                  "type": "object",
+                  "properties": {
+                    "totalInvoiceAmount": {
+                      "type": "object",
+                      "properties": {
+                        "currencyCode": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "currencyCode",
+                        "value"
+                      ]
+                    },
+                    "totalVATAmount": {
+                      "type": "object",
+                      "properties": {
+                        "currencyCode": {
+                          "type": "null"
+                        },
+                        "value": {
+                          "type": "number"
+                        }
+                      },
+                      "required": [
+                        "currencyCode",
+                        "value"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "totalInvoiceAmount",
+                    "totalVATAmount"
+                  ]
+                },
+                "paymentTerms": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "netPaymentDue": {
+                          "type": "object",
+                          "properties": {
+                            "dateDue": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "dateDue"
+                          ]
+                        },
+                        "paymentTermsDiscount": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "netPaymentDue",
+                        "paymentTermsDiscount"
+                      ]
+                    }
+                  ]
+                },
+                "invoiceAllowanceCharge": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "allowanceChargeAmount": {
+                          "type": "object",
+                          "properties": {
+                            "currencyCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "currencyCode",
+                            "value"
+                          ]
+                        },
+                        "allowanceChargePercentage": {
+                          "type": "number"
+                        },
+                        "allowanceChargeType": {
+                          "type": "integer"
+                        },
+                        "allowanceOrChargeType": {
+                          "type": "integer"
+                        },
+                        "amountPerUnit": {
+                          "type": "null"
+                        },
+                        "baseAmount": {
+                          "type": "null"
+                        },
+                        "baseNumberOfUnits": {
+                          "type": "null"
+                        },
+                        "bracketIdentifier": {
+                          "type": "null"
+                        },
+                        "effectiveDateTypecketIdentifier": {
+                          "type": "integer"
+                        },
+                        "sequenceNumber": {
+                          "type": "integer"
+                        },
+                        "settlementType": {
+                          "type": "string"
+                        },
+                        "specialServiceType": {
+                          "type": "integer"
+                        },
+                        "allowanceChargeDescription": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "allowanceChargeAmount",
+                        "allowanceChargePercentage",
+                        "allowanceChargeType",
+                        "allowanceOrChargeType",
+                        "amountPerUnit",
+                        "baseAmount",
+                        "baseNumberOfUnits",
+                        "bracketIdentifier",
+                        "effectiveDateTypecketIdentifier",
+                        "sequenceNumber",
+                        "settlementType",
+                        "specialServiceType",
+                        "allowanceChargeDescription"
+                      ]
+                    }
+                  ]
+                },
+                "invoiceLineItem": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "lineItemNumber": {
+                          "type": "string"
+                        },
+                        "invoicedQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "amountInclusiveAllowancesCharges": {
+                          "type": "object",
+                          "properties": {
+                            "currencyCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "currencyCode",
+                            "value"
+                          ]
+                        },
+                        "deliveredQuantity": {
+                          "type": "null"
+                        },
+                        "itemPriceBaseQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "transactionalTradeItem": {
+                          "type": "object",
+                          "properties": {
+                            "gtin": {
+                              "type": "string"
+                            },
+                            "tradeItemQuantity": {
+                              "type": "null"
+                            },
+                            "tradeItemDescription": {
+                              "type": "object",
+                              "properties": {
+                                "languageCode": {
+                                  "type": "null"
+                                },
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "languageCode",
+                                "value"
+                              ]
+                            },
+                            "transactionalItemData": {
+                              "type": "null"
+                            },
+                            "additionalTradeItemIdentification": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            },
+                            "avpList": {
+                              "type": "object",
+                              "properties": {
+                                "ecomStringAttributeValuePairList": {
+                                  "type": "array",
+                                  "items": {}
+                                }
+                              },
+                              "required": [
+                                "ecomStringAttributeValuePairList"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "gtin",
+                            "tradeItemQuantity",
+                            "tradeItemDescription",
+                            "transactionalItemData",
+                            "additionalTradeItemIdentification",
+                            "avpList"
+                          ]
+                        },
+                        "purchaseOrder": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            },
+                            "lineItemNumber": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification",
+                            "lineItemNumber"
+                          ]
+                        },
+                        "despatchAdvice": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification"
+                          ]
+                        },
+                        "avpList": {
+                          "type": "object",
+                          "properties": {
+                            "ecomStringAttributeValuePairList": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "null"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "ecomStringAttributeValuePairList"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "lineItemNumber",
+                        "invoicedQuantity",
+                        "amountInclusiveAllowancesCharges",
+                        "deliveredQuantity",
+                        "itemPriceBaseQuantity",
+                        "transactionalTradeItem",
+                        "purchaseOrder",
+                        "despatchAdvice",
+                        "avpList"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "lineItemNumber": {
+                          "type": "string"
+                        },
+                        "invoicedQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "amountInclusiveAllowancesCharges": {
+                          "type": "object",
+                          "properties": {
+                            "currencyCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "currencyCode",
+                            "value"
+                          ]
+                        },
+                        "deliveredQuantity": {
+                          "type": "null"
+                        },
+                        "itemPriceBaseQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "transactionalTradeItem": {
+                          "type": "object",
+                          "properties": {
+                            "gtin": {
+                              "type": "string"
+                            },
+                            "tradeItemQuantity": {
+                              "type": "null"
+                            },
+                            "tradeItemDescription": {
+                              "type": "object",
+                              "properties": {
+                                "languageCode": {
+                                  "type": "null"
+                                },
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "languageCode",
+                                "value"
+                              ]
+                            },
+                            "transactionalItemData": {
+                              "type": "null"
+                            },
+                            "additionalTradeItemIdentification": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            },
+                            "avpList": {
+                              "type": "object",
+                              "properties": {
+                                "ecomStringAttributeValuePairList": {
+                                  "type": "array",
+                                  "items": {}
+                                }
+                              },
+                              "required": [
+                                "ecomStringAttributeValuePairList"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "gtin",
+                            "tradeItemQuantity",
+                            "tradeItemDescription",
+                            "transactionalItemData",
+                            "additionalTradeItemIdentification",
+                            "avpList"
+                          ]
+                        },
+                        "purchaseOrder": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            },
+                            "lineItemNumber": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification",
+                            "lineItemNumber"
+                          ]
+                        },
+                        "despatchAdvice": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification"
+                          ]
+                        },
+                        "avpList": {
+                          "type": "object",
+                          "properties": {
+                            "ecomStringAttributeValuePairList": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "null"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "ecomStringAttributeValuePairList"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "lineItemNumber",
+                        "invoicedQuantity",
+                        "amountInclusiveAllowancesCharges",
+                        "deliveredQuantity",
+                        "itemPriceBaseQuantity",
+                        "transactionalTradeItem",
+                        "purchaseOrder",
+                        "despatchAdvice",
+                        "avpList"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "lineItemNumber": {
+                          "type": "string"
+                        },
+                        "invoicedQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "amountInclusiveAllowancesCharges": {
+                          "type": "object",
+                          "properties": {
+                            "currencyCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "currencyCode",
+                            "value"
+                          ]
+                        },
+                        "deliveredQuantity": {
+                          "type": "null"
+                        },
+                        "itemPriceBaseQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "transactionalTradeItem": {
+                          "type": "object",
+                          "properties": {
+                            "gtin": {
+                              "type": "string"
+                            },
+                            "tradeItemQuantity": {
+                              "type": "null"
+                            },
+                            "tradeItemDescription": {
+                              "type": "object",
+                              "properties": {
+                                "languageCode": {
+                                  "type": "null"
+                                },
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "languageCode",
+                                "value"
+                              ]
+                            },
+                            "transactionalItemData": {
+                              "type": "null"
+                            },
+                            "additionalTradeItemIdentification": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            },
+                            "avpList": {
+                              "type": "object",
+                              "properties": {
+                                "ecomStringAttributeValuePairList": {
+                                  "type": "array",
+                                  "items": {}
+                                }
+                              },
+                              "required": [
+                                "ecomStringAttributeValuePairList"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "gtin",
+                            "tradeItemQuantity",
+                            "tradeItemDescription",
+                            "transactionalItemData",
+                            "additionalTradeItemIdentification",
+                            "avpList"
+                          ]
+                        },
+                        "purchaseOrder": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            },
+                            "lineItemNumber": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification",
+                            "lineItemNumber"
+                          ]
+                        },
+                        "despatchAdvice": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification"
+                          ]
+                        },
+                        "avpList": {
+                          "type": "object",
+                          "properties": {
+                            "ecomStringAttributeValuePairList": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "null"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "ecomStringAttributeValuePairList"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "lineItemNumber",
+                        "invoicedQuantity",
+                        "amountInclusiveAllowancesCharges",
+                        "deliveredQuantity",
+                        "itemPriceBaseQuantity",
+                        "transactionalTradeItem",
+                        "purchaseOrder",
+                        "despatchAdvice",
+                        "avpList"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "lineItemNumber": {
+                          "type": "string"
+                        },
+                        "invoicedQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "amountInclusiveAllowancesCharges": {
+                          "type": "object",
+                          "properties": {
+                            "currencyCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "currencyCode",
+                            "value"
+                          ]
+                        },
+                        "deliveredQuantity": {
+                          "type": "null"
+                        },
+                        "itemPriceBaseQuantity": {
+                          "type": "object",
+                          "properties": {
+                            "measurementUnitCode": {
+                              "type": "string"
+                            },
+                            "value": {
+                              "type": "number"
+                            }
+                          },
+                          "required": [
+                            "measurementUnitCode",
+                            "value"
+                          ]
+                        },
+                        "transactionalTradeItem": {
+                          "type": "object",
+                          "properties": {
+                            "gtin": {
+                              "type": "string"
+                            },
+                            "tradeItemQuantity": {
+                              "type": "null"
+                            },
+                            "tradeItemDescription": {
+                              "type": "object",
+                              "properties": {
+                                "languageCode": {
+                                  "type": "null"
+                                },
+                                "value": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "languageCode",
+                                "value"
+                              ]
+                            },
+                            "transactionalItemData": {
+                              "type": "null"
+                            },
+                            "additionalTradeItemIdentification": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "additionalTradeItemIdentificationTypeCode": {
+                                      "type": "null"
+                                    },
+                                    "additionalLogisticsUnitIdentificationTypeCode": {
+                                      "type": "string"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "additionalTradeItemIdentificationTypeCode",
+                                    "additionalLogisticsUnitIdentificationTypeCode",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            },
+                            "avpList": {
+                              "type": "object",
+                              "properties": {
+                                "ecomStringAttributeValuePairList": {
+                                  "type": "array",
+                                  "items": {}
+                                }
+                              },
+                              "required": [
+                                "ecomStringAttributeValuePairList"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "gtin",
+                            "tradeItemQuantity",
+                            "tradeItemDescription",
+                            "transactionalItemData",
+                            "additionalTradeItemIdentification",
+                            "avpList"
+                          ]
+                        },
+                        "purchaseOrder": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            },
+                            "lineItemNumber": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification",
+                            "lineItemNumber"
+                          ]
+                        },
+                        "despatchAdvice": {
+                          "type": "object",
+                          "properties": {
+                            "entityIdentification": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "entityIdentification"
+                          ]
+                        },
+                        "avpList": {
+                          "type": "object",
+                          "properties": {
+                            "ecomStringAttributeValuePairList": {
+                              "type": "array",
+                              "items": [
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                },
+                                {
+                                  "type": "object",
+                                  "properties": {
+                                    "attributeName": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeName": {
+                                      "type": "string"
+                                    },
+                                    "qualifierCodeList": {
+                                      "type": "null"
+                                    },
+                                    "qualifierCodeListVersion": {
+                                      "type": "null"
+                                    },
+                                    "value": {
+                                      "type": "null"
+                                    }
+                                  },
+                                  "required": [
+                                    "attributeName",
+                                    "qualifierCodeName",
+                                    "qualifierCodeList",
+                                    "qualifierCodeListVersion",
+                                    "value"
+                                  ]
+                                }
+                              ]
+                            }
+                          },
+                          "required": [
+                            "ecomStringAttributeValuePairList"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "lineItemNumber",
+                        "invoicedQuantity",
+                        "amountInclusiveAllowancesCharges",
+                        "deliveredQuantity",
+                        "itemPriceBaseQuantity",
+                        "transactionalTradeItem",
+                        "purchaseOrder",
+                        "despatchAdvice",
+                        "avpList"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "creationDateTime",
+                "documentStatusCode",
+                "invoiceIdentification",
+                "invoiceType",
+                "invoiceCurrencyCode",
+                "buyer",
+                "seller",
+                "invoiceTotals",
+                "paymentTerms",
+                "invoiceAllowanceCharge",
+                "invoiceLineItem"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "standardBusinessDocumentHeader",
+        "invoice"
+      ]
+    },
+    "organizationId": {
+      "type": "string"
+    },
+    "buyerPartyIdentifier": {
+      "type": "string"
+    },
+    "sellerPartyIdentifier": {
+      "type": "string"
+    },
+    "routableType": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "invoiceMessage",
+    "organizationId",
+    "buyerPartyIdentifier",
+    "sellerPartyIdentifier",
+    "routableType"
+  ]
+}
